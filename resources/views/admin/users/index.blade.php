@@ -1,0 +1,48 @@
+@extends('admin.template.main')
+
+@section('title', 'Lista de Usuarios')
+
+@section('content')
+
+        <div class="fluid">
+            <a href="{{ route('users.create')}}" class="btn btn-primary">Registrar Nuevo Usuario</a>
+        </div>
+        <br>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Tipo de Usuario</th>
+                    <th>Editar Usuario</th>
+                    <th>Eliminar Usuario</th>
+                </thead>
+
+                <tbody>
+                    @foreach($users as $user)
+                        <tr>
+                            <td>{{ $user->id }}</td>
+                            <td>{{ $user->name }}</td>
+                            <td>{{ $user->email }}</td>
+                            <td>
+                                @if($user->type == "Administrador")
+                                   <span class="label label-primary">{{ $user->type }}</span>
+                                @else
+                                   <span class="label label-default">{{ $user->type }}</span>
+                                @endif
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-cog"></span></a>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+            {!! $users->render() !!}
+        </div>
+
+@endsection

@@ -1,0 +1,29 @@
+/* -- HEADER --*/
+.navbar {
+    margin-bottom: 0;
+}
+
+.jumbotron{
+    background: #ffbd0d;
+    color: #222222;
+    padding: 5px;
+}
+
+.jumbotron  h1 img{
+    padding-right: 40px;
+}
+
+.jumbotron a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.jumbotron a:hover{
+    color: #ffffff;
+}
+
+.panel-default > .panel-heading {
+  color: #ffffff;
+  background-color: #222222;
+  border-color: #222222;
+}
