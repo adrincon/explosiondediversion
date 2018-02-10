@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'Default') | Panel de Administracion</title>
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/estilos') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/estilos.css') }}">
     <link rel="shortcut icon" href="{{ asset('/logo/favicon.ico') }}">
     <link rel="stylesheet" href="{{ asset('plugins/chosen/chosen.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/trumbowyg/ui/trumbowyg.css') }}">
