@@ -63,7 +63,7 @@
 
 <script src="{{ asset('plugins/bootstrap/js/jquery.js') }}"></script>
 <script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('plugins/chosen.jquery.js') }}"></script>
+<script src="{{ asset('plugins/chosen/chosen.jquery.js') }}"></script>
 <script src="{{ asset('plugins/trumbowyg/trumbowyg.js') }}"></script>
 
 <!-- Include external JS libs. -->
