@@ -26,4 +26,23 @@ class Service extends Model
     public function user(){
       return $this->belongsTo('App\User');
     }
+
+    public function serviceimages(){
+        return $this->hasMany('App\Serviceimage');
+    }
+
+    public function scopeSearch($query, $title){
+          if (trim($title) != "") {
+            $query->where('title',"LIKE", "%$title%");
+          }
+    }
+
+    public static function findBySlugOrFail($slug, $columns = array('*') )
+    {
+        if ( ! is_null($slug = static::whereSlug($slug)->first($columns))) {
+            return $slug;
+        }
+
+        throw new ModelNotFoundException;
+    }
 }

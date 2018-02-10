@@ -34,4 +34,17 @@ class User extends Authenticatable
     public function services(){
       return $this->hasMany('App\Service');
     }
+
+    public function scopeSearch($query, $name){
+          if (trim($name) != "") {
+            $query->where('name',"LIKE", "%$name%");
+          }
+    }
+
+    public function administrador()
+    {
+      return $this->type === 'Administrador';
+    }
+
+
 }

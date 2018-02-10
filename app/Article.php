@@ -17,7 +17,7 @@ class Article extends Model
             ]
         ];
       }
-      
+
     protected $table = "articles";
 
     protected $fillable = ['title', 'content', 'category_id', 'user_id'];
@@ -31,6 +31,21 @@ class Article extends Model
     }
 
     public function images(){
-        return $this->hasMany('App\Tag');
+        return $this->hasMany('App\Image');
+    }
+
+    public function scopeSearch($query, $title){
+          if (trim($title) != "") {
+            $query->where('title',"LIKE", "%$title%");
+          }
+    }
+
+    public static function findBySlugOrFail($slug, $columns = array('*') )
+    {
+        if ( ! is_null($slug = static::whereSlug($slug)->first($columns))) {
+            return $slug;
+        }
+
+        throw new ModelNotFoundException;
     }
 }
