@@ -72,7 +72,7 @@
         <div class="active item">
           <img  src="images/explosion1.jpg" alt="banner1"/>
           <div class="carousel-caption">
-            <h3>Recreacion Dirigida</h3>
+            <h3>Recreacion Infantil Para Medellin y el Oriente Antioqueño</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
         </div>
