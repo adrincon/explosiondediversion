@@ -25,6 +25,7 @@
                         <?php $servicesList = \App\Service::orderBy('id', 'DESC')->get(); ?>
                           @foreach ($servicesList as $servicesItem)
                           <li><a href="{{ route('front.view.service', $servicesItem->slug) }}">{{ $servicesItem->title }}</a></li>
+                          <li class="divider"></li>
                           @endforeach
                           </ul>
                   </li>

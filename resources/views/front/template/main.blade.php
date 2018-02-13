@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" href="{{ asset('logo/favicon.ico') }}">
 	<link rel="stylesheet" href="{{ asset('plugins/chosen/chosen.css') }}">
 	<link rel="stylesheet" href="{{ asset('plugins/trumbowyg/ui/trumbowyg.css') }}">
-	<title>@yield('title', 'Default') | Panel de Administracion</title>
+	<title>@yield('title', 'Home') | Explosión de Diversión</title>
 </head>
 <body>
 
@@ -17,13 +17,14 @@
 		@include('front.template.partials.header')
 	</header>
 		<!-- JUMBOTRON -->
-		<section class="jumbotron">
-		    <div class="container">
-		        <div class="row text-center">
-		        <a href="{{ route('front.index') }}"><img src="{{ asset('\logo\explosion1.jpg') }}" alt="" height="300px"></a>
-		        </div>
-				</div>
-		</section>
+
+					<section class="jumbotron">
+					    <div class="container">
+					        <div class="row text-center">
+					        <a href="{{ route('front.index') }}"><img src="{{ asset('\logo\explosion1.jpg') }}" alt="" height="300px"></a>
+							</div>
+					</section>
+
 
 	<section>
 	<div class="container">

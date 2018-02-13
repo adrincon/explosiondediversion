@@ -163,7 +163,7 @@
         </h2>
         <p>Publicado <span class="post-fecha">{{ $article->created_at->diffForHumans() }}</span> por <span class="post-autor"><a href="#">Andres Rincon</a></span></p>
         <p class="post-contenido text-justify">
-            {!! mb_strimwidth(strip_tags($article->content), 0, 200, "...") !!}
+            {!! mb_strimwidth(strip_tags($article->content), 0, 300, "...") !!}
         </p>
         <div class="contenedor-botones">
           <i class="fa fa-folder-open-o"></i> <a href="#">{{ $article->category->name }}</a>
