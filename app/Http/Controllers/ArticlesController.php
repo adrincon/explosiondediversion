@@ -7,7 +7,7 @@ use Laracast\Flash\Flash;
 use App\Category;
 use App\Http\Requests;
 use App\Article;
-use App\image;
+use App\Image;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\ArticleRequest;
 
