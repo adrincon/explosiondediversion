@@ -33,8 +33,8 @@ class ServicesController extends Controller
 
     if ($request->file('image')) {
       $file = $request->file('image');
-      $name = 'exlosion_' . time() . '.' . $file->getClientOriginalExtension();
-      $path = public_path() . '\images\services';
+      $name = 'explosion_' . time() . '.' . $file->getClientOriginalExtension();
+      $path = public_path() . '/images/services';
       $file->move($path, $name);
     }
 
