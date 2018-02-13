@@ -31,12 +31,7 @@ class ServicesController extends Controller
   {
     //Manipulacion de imagenes
 
-    if ($request->file('image')) {
-      $file = $request->file('image');
-      $name = 'explosion_' . time() . '.' . $file->getClientOriginalExtension();
-      $path = public_path() . '/images/services';
-      $file->move($path, $name);
-    }
+
 
     $service = new Service($request->all());
     $service->user_id = \Auth::user()->id;
