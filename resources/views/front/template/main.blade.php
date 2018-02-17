@@ -16,15 +16,26 @@
 	<header>
 		@include('front.template.partials.header')
 	</header>
-		<!-- JUMBOTRON -->
+	<!-- JUMBOTRON -->
+	<style media="screen">
+	.image{
+	  background-color: #ce7146;
+	  padding: 1px;
+	}
+	</style>
 
-					<section class="jumbotron">
-					    <div class="container">
-					        <div class="row text-center">
-					        <a href="{{ route('front.index') }}"><img src="{{ asset('\logo\explosion1.jpg') }}" alt="" height="300px"></a>
-							</div>
-					</section>
+	<div class="image text-center visible-xs">
+	  <a href="{{ route('front.index') }}"><img src="{{ asset('\logo\explosion.png') }}" alt="" height="135px"></a>
+	</div>
 
+	<section class="jumbotron hidden-xs">
+	  <div class="container">
+	    <div class="row text-center">
+	      <a href="{{ route('front.index') }}"><img src="{{ asset('\logo\explosion.png') }}" alt="" height="300px"></a>
+	    </div>
+	  </div>
+	</section>
+	<!-- FIN JUMBOTRON -->
 
 	<section>
 	<div class="container">
@@ -34,7 +45,7 @@
 			<nav class="navbar navbar-inverse navbar-static-bottom">
 					<div class="container"><br>
 							<img align="left" src="{{ asset('\logo\payaso.png') }}" alt="" height="30px">
-							<h4 class="navbar-text ">Informacion: 319 - 257 - 7482 // Maria Rincón</h4>
+							<h4 class="navbar-text ">Informacion: 319 257 7482  //  Maria Rincón</h4>
 							<a href="#" class="navbar-brand navbar-right">Explósion de Diversión</a>
 					</div>
 			</nav>

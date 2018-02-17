@@ -13,19 +13,7 @@
 <header>
     @include('admin.template.partials.nav')
 </header>
-<!-- JUMBOTRON -->
-<section class="jumbotron">
-    <div class="container">
-        <div class="row">
-        <a href="{{ route('front.index') }}"><h1><img align="left" src="{{ asset('\logo\exd.png') }}" alt="" height="150px">Explosión de Diversión</h1></a>
 
-        <div class="hidden-xs">
-            <p>Recreacion y eventos para Medellín y el Oriente Antioqueño</p>
-        </div>
-
-        </div>
-    </div>
-</section>
 
 <div class="container">
     <div class="main row">

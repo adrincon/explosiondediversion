@@ -25,13 +25,25 @@
     @include('admin.template.partials.nav')
 </header>
 <!-- JUMBOTRON -->
-<section class="jumbotron">
-    <div class="container">
-        <div class="row text-center">
-        <a href="{{ route('front.index') }}"><img src="{{ asset('\logo\explosion1.jpg') }}" alt="" height="300px"></a>
-        </div>
+    <style media="screen">
+    .image{
+      background-color: #ce7146;
+      padding: 1px;
+    }
+    </style>
+
+    <div class="image text-center visible-xs">
+      <a href="{{ route('front.index') }}"><img src="{{ asset('\logo\explosion.png') }}" alt="" height="135px"></a>
     </div>
-</section>
+
+    <section class="jumbotron hidden-xs">
+      <div class="container">
+        <div class="row text-center">
+          <a href="{{ route('front.index') }}"><img src="{{ asset('\logo\explosion.png') }}" alt="" height="300px"></a>
+        </div>
+      </div>
+    </section>
+<!-- FIN JUMBOTRON -->
 
 <div class="container">
     <div class="main row">
