@@ -167,7 +167,7 @@
             {!! mb_strimwidth(strip_tags($article->content), 0, 300, "...") !!}
         </p>
         <div class="contenedor-botones">
-          <i class="fa fa-folder-open-o"></i> <p> Categoria<strong>{{ $article->category->name }}</strong></p> 
+          <i class="fa fa-folder-open-o"></i> <p>Categoria <strong>{{ $article->category->name }}</strong></p> 
           <div class="pull-right">
             <a href="{{ route('front.view.article', $article->slug) }}" class="btn btn-primary">Leer Mas</a>
           </div>
