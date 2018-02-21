@@ -73,7 +73,7 @@
           <img  src="images/explosion1.jpg" alt="banner1"/>
           <div class="carousel-caption">
             <h3>Recreacion Infantil Para Medellin y el Oriente Antioqueño</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Celebra tu fiesta y Diviértete mucho con nosotros. Tenemos gran variedad de paquetes y servicios para que te acomodes con tu presupuesto</p>
           </div>
         </div>
 
@@ -81,15 +81,17 @@
           <img  src="images/explosion2.jpg" alt="banner2"/>
           <div class="carousel-caption">
             <h3>Recreacion Dirigida</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Tenemos paquetes especiales para que célebres el cumple en el jardín</p>
           </div>
         </div>
 
         <div class="item">
           <img  src="images/explosion3.jpg" alt="banner3"/>
           <div class="carousel-caption">
-            <h3>Recreacion Dirigida</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3>Diversión sin límites</h3>
+            <p>"Todas las personas mayores al principio fueron niños, aunque pocas de ellas lo recuerdan".
+                Antoine de Saint-Exupéry
+                El Principito.</p>
           </div>
         </div>
       </div>
@@ -167,7 +169,7 @@
             {!! mb_strimwidth(strip_tags($article->content), 0, 300, "...") !!}
         </p>
         <div class="contenedor-botones">
-          <i class="fa fa-folder-open-o"></i> <p>Categoria <strong>{{ $article->category->name }}</strong></p> 
+          <i class="fa fa-folder-open-o"></i> <p>Categoria <strong>{{ $article->category->name }}</strong></p>
           <div class="pull-right">
             <a href="{{ route('front.view.article', $article->slug) }}" class="btn btn-primary">Leer Mas</a>
           </div>
