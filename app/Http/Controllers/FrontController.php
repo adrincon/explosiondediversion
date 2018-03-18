@@ -26,7 +26,7 @@ class FrontController extends Controller
           $articles->images;
         });
 
-        $services = Service::orderBy('id', 'DESC')->paginate(3);
+        $services = Service::orderBy('id', 'DESC')->paginate(6);
         $services->each(function($services){
           $services->serviceimages;
         });
