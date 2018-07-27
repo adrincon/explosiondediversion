@@ -70,29 +70,15 @@
       <div class="carousel-inner">
 
         <div class="active item">
-          <img  src="images/explosion1.jpg" alt="banner1"/>
-          <div class="carousel-caption">
-            <h3>Recreacion Infantil Para Medellin y el Oriente Antioqueño</h3>
-            <p>Celebra tu fiesta y Diviértete mucho con nosotros. Tenemos gran variedad de paquetes y servicios para que te acomodes con tu presupuesto</p>
-          </div>
+          <img  src="images/diversion.jpg" alt="banner1"/>
         </div>
 
         <div class="item">
           <img  src="images/explosion2.jpg" alt="banner2"/>
-          <div class="carousel-caption">
-            <h3>Recreacion Dirigida</h3>
-            <p>Tenemos paquetes especiales para que célebres el cumple en el jardín</p>
-          </div>
         </div>
 
         <div class="item">
           <img  src="images/explosion3.jpg" alt="banner3"/>
-          <div class="carousel-caption">
-            <h3>Diversión sin límites</h3>
-            <p>"Todas las personas mayores al principio fueron niños, aunque pocas de ellas lo recuerdan".
-                Antoine de Saint-Exupéry
-                El Principito.</p>
-          </div>
         </div>
       </div>
       <!-- Controls -->
