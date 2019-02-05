@@ -61,13 +61,20 @@
 
 <div id="contenedor">
     <div id="myCarousel" class="carousel slide">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
       <!-- Carousel items -->
-      <div class="carousel-inner">
+      <div class="carousel-inner" >
+
+        <div class="active-item"style="
+            background-image: url(images/diversion.jpg);
+            /* background-position: center center; */
+            /* background-size: cover; */
+            width: 100%;
+            /*background-image: url(/images/header1.jpg); */
+            height: 100%;
+            background-position: center center;
+            background-size: cover;
+          "></div>  == $0
+
 
         <div class="active item">
           <img  src="images/diversion.jpg" alt="banner1"/>
@@ -80,7 +87,7 @@
         <div class="item">
           <img  src="images/explosion3.jpg" alt="banner3"/>
         </div>
-      </div>
+
       <!-- Controls -->
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
